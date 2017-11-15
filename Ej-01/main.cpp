@@ -18,3 +18,16 @@ void fn(int x, int v[], int ini, int fin, int pos, bool retorno) {
             ++pos;
     }
 }
+/*Busqueda secuencial en un arreglo, realizado x un metodo iterativo
+ * metodo recursivo*/
+
+
+void fr(int x,int v[], int ini, int fin, int pos){
+    pos=ini;
+    if(ini>fin)
+        return;
+    else if(v[pos]==x)
+        return;
+    else
+        fr(x, v, ini++, fin, pos);
+}
